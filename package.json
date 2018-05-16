@@ -4,11 +4,13 @@
   "description": "'personal website to display my interests and past projects'",
   "main": "index.js",
   "scripts": {
+    "compile:sass": "node-sass scss/main.scss css/styles.css",
     "dev": "live-server"
   },
   "author": "Tim Remmert",
   "license": "ISC",
   "devDependencies": {
-    "live-server": "^1.2.0"
+    "live-server": "^1.2.0",
+    "node-sass": "^4.9.0"
   }
 }
