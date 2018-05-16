@@ -1,0 +1,14 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "'personal website to display my interests and past projects'",
+  "main": "index.js",
+  "scripts": {
+    "dev": "live-server"
+  },
+  "author": "Tim Remmert",
+  "license": "ISC",
+  "devDependencies": {
+    "live-server": "^1.2.0"
+  }
+}
