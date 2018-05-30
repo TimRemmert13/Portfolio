@@ -1,1 +1,266 @@
-@import "components/header.css"
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Tajawal', sans-serif;
+}
+
+.burger {
+    display: none;
+}
+
+.menu-mobile {
+    display: none;
+}
+
+header {
+    background-color: #02b3e4;
+}
+
+.logo {
+    color: white;
+    
+}
+
+.menu ul li {
+    display: inline;
+    padding: 40px;
+}
+
+.menu ul li a:hover {
+    color: #7d97ad;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+#header {
+    position: fixed;
+    width: 100%;
+    top: 0px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 30px;
+}
+
+
+.landing {
+    height: 95vh;
+    background-image: url('../images/green_pond.jpg');
+    background-size: cover;
+}
+
+.heading-main {
+    color: white;
+    text-transform: uppercase;
+    position: absolute;
+    top: 58%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.heading-primary {
+    display: block;
+    font-size: 60px;
+    font-weight: 400;
+    letter-spacing: 10px;
+}
+
+.heading-sub {
+    display: block;
+    font-size: 20px;
+    font-weight: 400px;
+    letter-spacing: 7px;
+}
+
+.about {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#profile-pic {
+    height: 40%;
+    width: 40%;
+    max-width: 100%;
+    border-radius: 50%;
+    padding: 20px;
+}
+
+.content {
+    padding: 20px;
+    text-align: center;
+    font-size: 16px;
+}
+
+#about-content {
+    line-height: 30px;
+}
+
+#about-title {
+    padding: 20px;
+}
+
+.project-image {
+    height: 50%;
+    width: 50%;
+    max-width: 100%;
+    padding: 20px;
+}
+
+#projects-title {
+    font-size: 50px;
+    font-weight: 200;
+    padding: 50px;
+}
+
+.projects {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 30px;
+}
+
+.project-link {
+    text-decoration: none;
+    font-size: 20px;
+    color: #02b3e4;
+}
+
+.project-link:hover {
+    color: #7d97ad;
+}
+
+.content-project {
+    padding: 20px;
+    text-align: center;
+    font-size: 16px;
+    max-width: 700px;
+}
+
+.contact-me {
+    max-width: 800px;
+    padding: 20px;
+    text-align: center;
+}
+
+@media (max-width: 770px) {
+
+    .about {
+        padding: 20px;
+        display: flex;
+        align-content: center;
+        flex-direction: column;
+    }
+
+    #profile-pic {
+        height: 40%;
+        width: 40%;
+        max-width: 100%;
+        border-radius: 50%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .content {
+        padding: 20px;
+        text-align: center;
+    }
+
+    #about-content {
+        line-height: 30px;
+    }
+
+    #about-title {
+        padding: 20px;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px 30px;
+    }
+
+    nav .logo {
+        margin: 5px;
+    }
+
+    .burger {
+        display: block;
+        cursor: pointer;
+    }
+
+    .burger .line {
+        width: 50px;
+        height: 5px;
+        display: block;
+        background-color: white;
+        margin: 8px auto;
+        transition: all .3s ease-in-out;
+        -moz-transition: all .3s ease-in-out;
+        -webkit-transition: all .3s ease-in-out;
+        -o-transition: all .3s ease-in-out;
+    }
+
+    .burger.is-active .line:nth-child(2) {
+        opacity: 0;
+    }
+
+    .burger.is-active .line:nth-child(1) {
+        transform: translateY(13px) rotate(45deg);
+    }
+
+    .burger.is-active .line:nth-child(3) {
+        transform: translateY(-13px) rotate(-45deg);
+    }
+
+    .menu-mobile {
+        background-color: #7d97ad;
+    }
+
+    .menu-mobile ul{
+        padding: 0;
+        margin: 0;
+        text-align: center;
+    }
+
+    .menu-mobile li {
+        padding: 30px;
+    }
+
+    .menu-mobile ul li a:hover {
+        color: #02b3e4;
+    }
+
+    .menu-mobile ul li a {
+        color: white;
+        text-decoration: none;
+    }
+}
+
+
