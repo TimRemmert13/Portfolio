@@ -1,0 +1,22 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TimRemmert13/Portfolio.git"
+  },
+  "author": "Tim Remmert",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TimRemmert13/Portfolio/issues"
+  },
+  "homepage": "https://github.com/TimRemmert13/Portfolio#readme",
+  "dependencies": {
+    "express": "^4.16.3"
+  }
+}
