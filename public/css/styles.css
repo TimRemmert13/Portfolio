@@ -53,6 +53,10 @@ nav {
     padding: 10px 30px;
 }
 
+.menu-mobile {
+    display: none;
+}
+
 
 .landing {
     height: 95vh;
@@ -162,6 +166,43 @@ nav {
     max-width: 800px;
     padding: 20px;
     text-align: center;
+}
+
+.skills-section {
+    background-color: rgb(45, 40, 40);
+    color: white;
+}
+
+.skills {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 40px;
+}
+
+#skills-title {
+    text-align: center;
+    font-size: 60px;
+    padding: 40px;
+}
+
+.list {
+    padding: 20px;
+    font-size: 35px;
+}
+
+.sub-title {
+   font-size: 45px;
+   color: #02b3e4;
+}
+
+.list-container {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 @media (max-width: 770px) {
